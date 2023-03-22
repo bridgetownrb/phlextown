@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+Testing Phlex:
+
+<%= render PhlexMe.new(tagline: "weird phlex but ok") do %>
+  <%= render StandardComponent.new %>
+<% end %>
+
+<%= phlex title: "Fantastic!" do
+  section class: "callout" do
+    plain helpers.markdownify("_marked_")
+    render PhlexMe.new(tagline: @title)
+  end
+end %>

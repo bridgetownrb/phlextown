@@ -1,0 +1,3 @@
+<p>{{ "standard component" | upcase }}</p>
+
+{{ content }}
