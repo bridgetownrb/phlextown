@@ -4,14 +4,14 @@ class PhlexMe < Phlex::HTML
     @site = Bridgetown::Current.site
   end
 
-  def template(&)
+  def template(&blk)
     article class: "tagline" do
       p { @tagline }
       aside { helpers.markdownify("**Strong**") }
       render StandardComponent.new do
         output { site.metadata.title }
       end
-      footer(&)
+      footer(&blk)
     end
 
     liquid_render "liquidity"
