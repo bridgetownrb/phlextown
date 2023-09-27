@@ -1,3 +1,7 @@
+**Update: I haven't been using Phlex on any real-world projects and haven't seen any real demand for it in Bridgetown circles, so I've decided to archive this (unreleased) plugin. Happy to revisit down the road if demand increases.
+
+----
+
 # Phlextown
 
 A [Bridgetown](https://www.bridgetownrb.com) plugin for rendering [Phlex](https://www.phlex.fun) components.
